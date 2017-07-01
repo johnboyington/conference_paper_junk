@@ -1,0 +1,23 @@
+model                      mcnp
+method                     cadis
+outputs                    mcnp
+mcnp_input                 triga_rot.i
+mcnp_tallies               21
+mesh_refinement            mcnp
+mesh_x                     -54 -24  21 144 268
+mesh_y                     -54 -24 -12   12 24 54
+mesh_z                     -50 -20 1.86 20 50
+mesh_x_ints                3 20 123 124
+mesh_y_ints                3 12 24 12 3
+mesh_z_ints                3 21 9 3
+anisn_library              bplus
+denovo_pn_order            5
+mcnp_min_source_samples    1E9
+mcnp_max_source_samples    1E10
+mcnp_target_source_density 300
+mcnp_min_rays_per_face     20
+denovo_quad_num_azi        30
+denovo_quad_num_polar      8
+denovo_x_blocks            8
+denovo_y_blocks            8
+denovo_z_blocks            1
